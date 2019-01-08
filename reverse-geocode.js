@@ -21,7 +21,7 @@ module.exports = async latlng => {
 		await redis.set(latlng, response.json.results[0].formatted_address);
 		return response.json.results[0].formatted_address;
 	} catch (error) {
-		console.log(error);
+		console.log(error.json.error_message);
 		return '';
 	}
 };
