@@ -1,0 +1,20 @@
+{
+	"name": "reverse-geocode-cli",
+	"version": "0.0.1",
+	"description": "A CLI app that takes lat long and display the reverse geocoded address",
+	"main": "cli.js",
+	"bin": {
+		"rgc": "cli.js"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"author": "Bikash Dash <beeeku@gmail.com> (https://bikash.me/)",
+	"license": "MIT",
+	"dependencies": {
+		"@google/maps": "^0.5.5",
+		"dotenv": "^6.2.0",
+		"ioredis": "^4.3.0",
+		"meow": "^5.0.0"
+	}
+}
